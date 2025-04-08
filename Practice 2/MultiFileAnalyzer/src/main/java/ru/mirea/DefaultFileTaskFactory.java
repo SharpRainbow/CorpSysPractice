@@ -5,7 +5,7 @@ import java.util.function.Supplier;
 /**
  * Фабрика для создания объектов Task, позволяющих анализировать файлы.
  */
-public class DefaultFileTaskFactory implements FileTaskFactory {
+public class DefaultFileTaskFactory extends TaskFactory {
 
     private final DataRepository repository;
     private final Supplier<ContentAnalyzer<String, FileAnalysis>> analyzerSupplier;

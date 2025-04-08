@@ -9,26 +9,17 @@ import java.nio.file.InvalidPathException;
 /**
  * Класс задачи для анализа файла.
  */
-public class FileTask implements Runnable {
+public class FileTask extends RunnableTask {
 
     private final String fileName;
     private FileAnalysis taskResult;
     private final ContentAnalyzer<String, FileAnalysis> analyzer;
-    private OnTaskCompleteListener onTaskCompleteListener;
     private final DataRepository repository;
 
     public FileTask(String fileName, DataRepository repository, ContentAnalyzer<String, FileAnalysis> analyzer) {
         this.repository = repository;
         this.fileName = fileName;
         this.analyzer = analyzer;
-    }
-
-    /**
-     * Данный метод позволяет установить слущатель завершения задачи.
-     * @param onTaskCompleteListener Реализация интерфейса слушателя.
-     */
-    public void setOnTaskCompleteListener(OnTaskCompleteListener onTaskCompleteListener) {
-        this.onTaskCompleteListener = onTaskCompleteListener;
     }
 
     @Override
@@ -50,10 +41,6 @@ public class FileTask implements Runnable {
         }
         if (onTaskCompleteListener != null)
             onTaskCompleteListener.onTaskComplete(taskResult);
-    }
-
-    interface OnTaskCompleteListener {
-        void onTaskComplete(FileAnalysis analysis);
     }
 
 }

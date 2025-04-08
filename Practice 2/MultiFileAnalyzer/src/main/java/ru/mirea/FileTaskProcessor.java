@@ -12,20 +12,19 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class FileTaskProcessor implements TaskProcessor<String> {
 
     private final ExecutorService executor;
-    private final FileTaskFactory taskFactory;
+    private final TaskFactory taskFactory;
     private final Phaser phaser;
     private final AtomicInteger wordCounter = new AtomicInteger(0);
     private final AtomicInteger charCounter = new AtomicInteger(0);
 
-    public FileTaskProcessor(ExecutorService executor, FileTaskFactory taskFactory) {
+    public FileTaskProcessor(ExecutorService executor, TaskFactory taskFactory) {
         this.executor = executor;
         this.taskFactory = taskFactory;
         phaser = new Phaser(1);
     }
 
     private void submitTask(String task) {
-        FileTask fileTask = taskFactory.createTask(task);
-        fileTask.setOnTaskCompleteListener(new FileTask.OnTaskCompleteListener() {
+        RunnableTask fileTask = taskFactory.create(task, new FileTask.OnTaskCompleteListener() {
             @Override
             public void onTaskComplete(FileAnalysis analysis) {
                 try {
