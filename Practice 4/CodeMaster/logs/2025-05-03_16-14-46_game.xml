@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<java version="17.0.8" class="java.beans.XMLDecoder">
+ <object class="ru.mirea.logger.CodeMasterLogRecord">
+  <void property="endTimestamp">
+   <string>2025-05-03 16:14:46</string>
+  </void>
+  <void property="secretCode">
+   <string>1887</string>
+  </void>
+  <void property="startTimestamp">
+   <string>2025-05-03 16:14:14</string>
+  </void>
+  <void property="tries">
+   <array class="java.lang.String" length="11">
+    <void index="0">
+     <string>Данные игрока: ipAddress=127.0.0.1, uniqueId=6064be74-0e93-434e-bf6e-fbd18288fdad, 1234, Черные маркеры=1, Белые маркеры=0</string>
+    </void>
+    <void index="1">
+     <string>Данные игрока: ipAddress=127.0.0.1, uniqueId=6064be74-0e93-434e-bf6e-fbd18288fdad, 4442, Черные маркеры=0, Белые маркеры=0</string>
+    </void>
+    <void index="2">
+     <string>Данные игрока: ipAddress=127.0.0.1, uniqueId=6064be74-0e93-434e-bf6e-fbd18288fdad, 6665, Черные маркеры=0, Белые маркеры=0</string>
+    </void>
+    <void index="3">
+     <string>Данные игрока: ipAddress=127.0.0.1, uniqueId=6064be74-0e93-434e-bf6e-fbd18288fdad, 44448, Неверные входные данные! Код должен содержать 4 символов!</string>
+    </void>
+    <void index="4">
+     <string>Данные игрока: ipAddress=127.0.0.1, uniqueId=6064be74-0e93-434e-bf6e-fbd18288fdad, 8975, Черные маркеры=0, Белые маркеры=2</string>
+    </void>
+    <void index="5">
+     <string>Данные игрока: ipAddress=127.0.0.1, uniqueId=6064be74-0e93-434e-bf6e-fbd18288fdad, 12343, Неверные входные данные! Код должен содержать 4 символов!</string>
+    </void>
+    <void index="6">
+     <string>Данные игрока: ipAddress=127.0.0.1, uniqueId=6064be74-0e93-434e-bf6e-fbd18288fdad, 4443, Черные маркеры=0, Белые маркеры=0</string>
+    </void>
+    <void index="7">
+     <string>Данные игрока: ipAddress=0:0:0:0:0:0:0:1, uniqueId=a09a85c4-3ba6-4da1-94ed-9f48df5aef40, 2333, Черные маркеры=0, Белые маркеры=0</string>
+    </void>
+    <void index="8">
+     <string>Данные игрока: ipAddress=0:0:0:0:0:0:0:1, uniqueId=a09a85c4-3ba6-4da1-94ed-9f48df5aef40, 3455, Черные маркеры=0, Белые маркеры=0</string>
+    </void>
+    <void index="9">
+     <string>Данные игрока: ipAddress=0:0:0:0:0:0:0:1, uniqueId=a09a85c4-3ba6-4da1-94ed-9f48df5aef40, 6666, Черные маркеры=0, Белые маркеры=0</string>
+    </void>
+    <void index="10">
+     <string>Данные игрока: ipAddress=0:0:0:0:0:0:0:1, uniqueId=a09a85c4-3ba6-4da1-94ed-9f48df5aef40, 1887, Черные маркеры=4, Белые маркеры=0</string>
+    </void>
+   </array>
+  </void>
+  <void property="winner">
+   <string>Данные игрока: ipAddress=0:0:0:0:0:0:0:1, uniqueId=a09a85c4-3ba6-4da1-94ed-9f48df5aef40</string>
+  </void>
+ </object>
+</java>
